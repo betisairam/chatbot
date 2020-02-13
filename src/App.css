@@ -23,11 +23,61 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.chatContainer {
+	max-height: 800px;
+	overflow: auto;
+	min-height: 86.5%;
+    border: 1px solid black;
   }
-  to {
-    transform: rotate(360deg);
+
+.tableContainer {
+	max-height: 800px;
+	overflow: auto;
+	min-height: 95.5%;
+    border: 1px solid black;
   }
+.bubbleWrapper {
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+}
+.inlineContainer {
+  display: inline-flex;
+}
+.inlineContainer.own {
+  flex-direction: row-reverse;
+}
+.inlineIcon {
+  width:20px;
+  object-fit: contain;
+}
+.ownBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+    margin: 6px 8px;
+	color: #666d78;
+	background-color: #EAF2FF;
+	border-radius: 16px 16px 0 16px;
+	border: 1px solid #D6E5FC;
+ 
+}
+.otherBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+    margin: 6px 8px;
+	color: #666d78;
+	background-color: #F9F9F9;
+	border-radius: 16px 16px 16px 0;
+	border: 1px solid #e8e8e8;
+  
+}
+.own {
+	align-self: flex-end;
+}
+.other {
+	align-self: flex-start;
 }
